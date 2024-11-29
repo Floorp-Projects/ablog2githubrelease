@@ -1,0 +1,16 @@
+{
+  "name": "ablog2githubrelease",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "keywords": [],
+  "author": "typeling1578",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "node-html-parser": "^6.1.13"
+  }
+}
