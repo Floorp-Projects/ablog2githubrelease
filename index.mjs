@@ -41,7 +41,7 @@ for (const elem of content.querySelectorAll("*")) {
 }
 
 for (const elem of content.querySelectorAll("img")) {
-  elem.setAttribute("style", `width: auto; height: auto; ${elem.getAttribute("style") ?? ""}`)
+  elem.setAttribute("style", `width: auto; height: auto; max-width: 100%; ${elem.getAttribute("style") ?? ""}`)
 }
 
 let markdown;
