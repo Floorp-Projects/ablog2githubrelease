@@ -29,6 +29,7 @@ const html = await result.text();
 
 const dom = HTMLParser.parse(html);
 const content = dom.querySelector(".entry-content");
+
 for (const elem of content.querySelectorAll("*")) {
   elem.setAttribute("data-ablog2ghr-innertext", elem.innerText);
 }
@@ -37,6 +38,10 @@ for (const selector of args.values["exclude-selectors"] ?? []) {
 }
 for (const elem of content.querySelectorAll("*")) {
   elem.removeAttribute("data-ablog2ghr-innertext");
+}
+
+for (const elem of content.querySelectorAll("img")) {
+  elem.setAttribute("style", `width: auto; height: auto; ${elem.getAttribute("style") ?? ""}`)
 }
 
 let markdown;
