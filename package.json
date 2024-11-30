@@ -12,5 +12,10 @@
   "license": "UNLICENSED",
   "dependencies": {
     "node-html-parser": "^6.1.13"
-  }
+  },
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@9"
 }
