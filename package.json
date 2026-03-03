@@ -11,7 +11,7 @@
   "author": "typeling1578",
   "license": "UNLICENSED",
   "dependencies": {
-    "node-html-parser": "^7.0.1"
+    "node-html-parser": "^7.1.0"
   },
   "engines": {
     "node": ">=22",
